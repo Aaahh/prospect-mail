@@ -26,7 +26,8 @@ class MailWindowController {
             autoHideMenuBar: true,
             show: false,
             title: 'Prospect Mail',
-            icon: path.join(__dirname, '../../assets/outlook_linux_black.png')
+            icon: path.join(__dirname, '../../assets/outlook_linux_black.png'),
+            webPreferences: { nodeIntegration:false, }
         })
 
         // and load the index.html of the app.
@@ -105,7 +106,7 @@ class MailWindowController {
                         }
                     });
                 });
-            
+
                 observer.observe(unreadSpan, {childList: true});
 
                 // If the div containing reminders gets taller we probably got a new

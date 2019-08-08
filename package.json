@@ -83,7 +83,7 @@
       ]
     },
     "win": {
-      "target":"msi"
+      "target": "msi"
     }
   }
 }
